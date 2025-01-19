@@ -9,23 +9,66 @@
 </head>
 <body>
     <!--container for login-->
-    <div class="login">
+    <div class="login-form">
+        <div class="form-container">
+            <!--container for user/admin-->
+            <div class="slide-controls">
+                <input type="radio" name="slide" id="login" checked>
+                <input type="radio" name="slide" id="signup">
+                <label for="login" class="slide login">User</label>
+                <label for="signup" class="slide signup">Admin</label>
+                <div class="slider-tab"></div>
+            </div>
+        </div>
         <!--container for app title-->
-        <div style="margin-top: 25%;">
+        <div style="margin-top: 8%;">
             <h1 style="color: white; text-align: left; padding-left: 15%; margin-bottom: 5px;">IT Degree Program</h1>
             <h1 style="color: white; text-align: left; padding-left: 15%; margin-top: 5px;">Recommender System</h1>
         </div>
         <!--container for input details-->
-        <div>
-           <h4 style="color: white; text-align: left; padding-left: 15%;">Name ( LastName, FirstName | Nickname )</h4>
+        <div class="form-container">
+            <div class="form-inner">
+                <!--user login page-->
+                <form action="#" class="login">
+                <h4 style="color: white; text-align: left;">Name ( LastName, FirstName | Nickname )</h4>
+                <div class="field">
+                    <input type="text" placeholder="" required>
+                </div>
+                <div style="padding-left: 15%; margin-top: 8%;">
+                    <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Continue">
+                    </div>
+                </div>
+                </form>
+                <!--admin login page-->
+                <form action="#" class="signup">
+                <div class="field">
+                    <input type="text" placeholder="Email Address" required>
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div style="padding-left: 15%; margin-top: 8%;">
+                    <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Login">
+                    </div>
+                </div>
+                </form>
+            </div>
         </div>
+        <!-- <div>
+           <h4 style="color: white; text-align: left; padding-left: 15%;">Name ( LastName, FirstName | Nickname )</h4>
+        </div> -->
         <!--container for input box-->
-        <div style="padding-left: 15%;">
+        <!-- <div style="padding-left: 15%;">
             <input class="user" type="text" id="username" name="username">
         </div>
         <div style="text-align: right; padding-right: 17%; margin-top: 5%;">
             <a href="#" class="submit">Submit</a>
-        </div>
+        </div> -->
     </div>
+    <script src="index-script.js"></script>
 </body>
 </html>
